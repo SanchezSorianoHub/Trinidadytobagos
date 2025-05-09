@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones de Trinidad y Tobago - Cumbre de las Américas</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #8B0000, #000000);
+            padding: 2rem 1rem;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+        }
+
+        .image-section {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem 1rem;
+            flex-wrap: wrap;
+            background-color: #fff;
+        }
+
+        .image-section img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .content {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem 1rem;
+            line-height: 1.7;
+        }
+
+        .content h2 {
+            color: #8B0000;
+            margin-top: 2rem;
+        }
+
+        .accordion {
+            background-color: #fff;
+            border: 1px solid #8B0000;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .accordion:hover {
+            background-color: #ffeaea;
+        }
+
+        .panel {
+            display: none;
+            background-color: #fff;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+        }
+
+        button.download {
+            background-color: #8B0000;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 2rem;
+        }
+
+        button.download:hover {
+            background-color: #a30000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #000;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <h1>Trinidad y Tobago en la Cumbre de las Américas</h1>
+        <p>Construyendo una América unida, justa y sostenible</p>
+    </header>
+
+   
+
+    <section class="content">
+        <h2>Propuesta de Trinidad y Tobago</h2>
+        <p>
+            Desde una pequeña isla con una gran visión: una América que avance unida, desde su diversidad,
+            hacia un desarrollo justo y sostenible.
+        </p>
+
+        <h2>Soluciones Interactivas</h2>
+
+        <div class="accordion">1. Alianza Climática y Económica</div>
+        <div class="panel">
+            <ul>
+                <li>Creación de un fondo multilateral para apoyar la transición verde.</li>
+                <li>Facilitar tratados regionales que promuevan comercio justo.</li>
+                <li>Plataforma digital común para seguimiento de acuerdos climáticos.</li>
+            </ul>
+        </div>
+
+        <div class="accordion">2. Infraestructura de Conectividad</div>
+        <div class="panel">
+            <ul>
+                <li>Red regional de telecomunicaciones para zonas rurales.</li>
+                <li>Plataformas digitales compartidas para educación y salud.</li>
+                <li>Programas de intercambio agrícola para mejorar la seguridad alimentaria.</li>
+            </ul>
+        </div>
+
+        <div class="accordion">3. Red de Respuesta ante Desastres</div>
+        <div class="panel">
+            <ul>
+                <li>Centro de monitoreo y alerta temprana para toda América.</li>
+                <li>Simulacros conjuntos y capacitaciones regionales.</li>
+                <li>Fondo de emergencia rápida ante desastres naturales.</li>
+            </ul>
+        </div>
+
+        <div class="accordion">4. Energía para Todos</div>
+        <div class="panel">
+            <ul>
+                <li>Subsidios a tecnologías limpias en países menos desarrollados.</li>
+                <li>Alianzas público-privadas para proyectos solares y eólicos.</li>
+                <li>Capacitación técnica regional para generación de energía renovable.</li>
+            </ul>
+        </div>
+
+        <div class="accordion">5. Integración Social e Intelectual</div>
+        <div class="panel">
+            <ul>
+                <li>Movilidad estudiantil en universidades y centros técnicos.</li>
+                <li>Proyectos científicos colaborativos entre países.</li>
+                <li>Eventos culturales y deportivos que refuercen el sentido de comunidad continental.</li>
+            </ul>
+        </div>
+
+        <h2>Descargar Propuesta</h2>
+        <a href="img/1.pdf" target="_blank">
+            <button class="download">Ver Propuesta en PDF</button>
+        </a>
+
+        <h2>Mensaje Final</h2>
+        <p>
+            La integración no puede seguir siendo un sueño pospuesto. Debe ser hoy, debe ser ahora. 
+            Que esta cumbre no sea otro discurso, sino el punto de partida hacia una América imparable.
+        </p>
+    </section>
+
+    <footer>
+        &copy; 2025 Trinidad y Tobago | Cumbre de las Américas
+    </footer>
+
+    <script>
+        const acc = document.querySelectorAll('.accordion');
+        acc.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const panel = btn.nextElementSibling;
+                panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
+
